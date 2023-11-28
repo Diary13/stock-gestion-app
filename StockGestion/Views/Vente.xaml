@@ -1,0 +1,17 @@
+﻿<Page x:Class="StockGestion.Views.Vente"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StockGestion.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="751"
+      Title="Vente">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/StockGestion;component/Images/market.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+
+    </Grid>
+</Page>

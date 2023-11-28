@@ -1,0 +1,82 @@
+﻿<Page x:Class="StockGestion.Views.UserPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StockGestion.Views"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      Loaded="Page_Loaded"
+      d:DesignHeight="570" d:DesignWidth="1024"
+      Title="UserPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="9*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="273*"/>
+            <ColumnDefinition Width="751*"/>
+        </Grid.ColumnDefinitions>
+        <Border Grid.Column="0" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF1B247A" Offset="0.394"/>
+                    <GradientStop Color="#FF4D0C39" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Border Grid.Column="1" Background="#FFC9CFC6" Grid.RowSpan="2"/>
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Margin="0,20,0,0">
+            <materialDesign:PackIcon x:Name="iconMenu" 
+        		                         Kind="Menu"
+                                         Width="40"
+                                         Height="40"
+                                         Foreground="White"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Margin="0,36,0,0">
+            <Button x:Name="vente" Content="Ventes"
+                                     Width="270"
+                                     Height="50"
+                                     FontSize="20"
+                                     FontFamily="Monotype Corsiva"
+                                     Style="{StaticResource styleButton5}" Click="vente_Click"/>
+            
+            <Button x:Name="prodFaible" Content="Produits Faibles"
+                                     Width="270"
+                                     Height="50"
+                                     FontSize="20"
+                                     FontFamily="Monotype Corsiva"
+                                     Style="{StaticResource styleButton5}"
+                                     Click="prodFaible_Click"/>
+            <!--<Button x:Name="facture" Content="Factures"
+                                     Width="270"
+                                     Height="50"
+                                     FontSize="20"
+                                     FontFamily="Monotype Corsiva"
+                                     Style="{StaticResource styleButton5}"/>-->
+            <Button x:Name="stock" Content="Stocks"
+                                     Width="270"
+                                     Height="50"
+                                     FontSize="20"
+                                     FontFamily="Monotype Corsiva"
+                                     Style="{StaticResource styleButton5}" Click="stock_Click" 
+                                     />
+
+            <Button x:Name="quitter" Content="Quitter"
+                                     Width="270"
+                                     Height="50"
+                                     FontSize="20"
+                                     FontFamily="Monotype Corsiva"
+                                     Style="{StaticResource styleButton5}" Click="quitter_Click" 
+                                     />
+
+        </StackPanel>
+        <Grid Grid.Column="1" Grid.RowSpan="2">
+            <Frame x:Name="PageInfoUser" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Page>

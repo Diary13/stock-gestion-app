@@ -1,0 +1,43 @@
+﻿<Page x:Class="StockGestion.Views.Achat"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StockGestion.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="751"
+      Title="Achat">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="29*"/>
+            <RowDefinition Height="256*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.RowSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="/StockGestion;component/Images/Stockgestion.jpg" Stretch="UniformToFill" Opacity="0.98"/>
+            </Grid.Background>
+        </Grid>
+        <StackPanel Orientation="Horizontal">
+            <Button x:Name="AjoutFour"
+                    Content="Nouveau fournisseur"
+                    Width="150"
+                    Height="25"
+                    Margin="20,0,0,0"
+                    FontFamily="Monotype Corsiva"
+                    Style="{StaticResource styleButton1}" 
+                    Click="AjoutFour_Click"/>
+            <Button x:Name="Commande_button"
+                    Content="Nouveau produit"
+                    Width="150"
+                    Height="25"
+                    Margin="20,0,0,0"
+                    FontFamily="Monotype Corsiva"
+                    Style="{StaticResource styleButton1}" Click="Commande_button_Click"/>
+
+        </StackPanel>
+        <Grid Grid.Row="1">
+            <Frame x:Name="InfoAchat" NavigationUIVisibility="Hidden"/>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,143 @@
+﻿<Page x:Class="StockGestion.Views.AjoutFournisseur"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StockGestion.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="541" d:DesignWidth="751"
+      Title="AjoutFournisseur">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="131*"/>
+            <ColumnDefinition Width="482*"/>
+            <ColumnDefinition Width="138*"/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" 
+              Background="Transparent" 
+              Margin="0,0,0,50">
+            <Border Background="Black" 
+                    Opacity="0.5"
+                    CornerRadius="10,10,10,10"/>
+            <StackPanel Margin="15,50,5,20" 
+                        Orientation="Vertical">
+                <StackPanel Orientation="Horizontal"
+                            HorizontalAlignment="Center"
+                            Margin="0,0,0,20">
+                    <TextBlock Text="Information Fournisseur"
+                               FontSize="30"
+                               Foreground="White"
+                               FontFamily="Monotype Corsiva"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Fournisseur :"
+                               FontSize="20"
+                               Foreground="white"
+                               Width="200"
+                               FontFamily="Monotype Corsiva"/>
+                    <StackPanel Orientation="Vertical">
+                        <TextBox x:Name="nomFour" FontFamily="Helvetica"
+            		        FontWeight="Light"
+            		        TextWrapping="Wrap"
+            		        FontSize="15"
+            		        HorizontalAlignment="Center"
+            		        Foreground="White"
+            		    
+            		        BorderThickness="0"
+            		        Width="235"
+            		        HorizontalContentAlignment="Left"
+            		        Height="25"/>
+                        <Border BorderThickness="1"
+                                    Width="235"
+                                    BorderBrush="Gray"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock  Text="Localité :"
+                               FontSize="20"
+                               Foreground="White"
+                               Width="200"
+                               Margin="0,10"
+                               FontFamily="Monotype Corsiva"/>
+                    <StackPanel Orientation="Vertical"
+                                 Margin="0,10,0,0">
+                        <TextBox x:Name="localFour" FontFamily="Helvetica"
+            		        FontWeight="Light"
+            		        TextWrapping="Wrap"
+            		        FontSize="15"
+            		        HorizontalAlignment="Center"
+            		        Foreground="White"
+            		        BorderThickness="0"
+            		        Width="235"
+            		        HorizontalContentAlignment="Left"
+            		        Height="25"/>
+                        <Border BorderThickness="1"
+                                    Width="235"
+                                    BorderBrush="Gray"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock  Text="Adresse mail :"
+                               FontSize="20"
+                               Foreground="White"
+                               Width="200"
+                                Margin="0,10,0,0"
+                               FontFamily="Monotype Corsiva"/>
+                    <StackPanel Orientation="Vertical"
+                                 Margin="0,10,0,0">
+                        <TextBox x:Name="mailFour" FontFamily="Helvetica"
+            		        FontWeight="Light"
+            		        TextWrapping="Wrap"
+            		        FontSize="15"
+            		        HorizontalAlignment="Center"
+            		        Foreground="White"
+            		        BorderThickness="0"
+            		        Width="235"
+            		        HorizontalContentAlignment="Left"
+            		        Height="25"/>
+                        <Border BorderThickness="1"
+                                    Width="235"
+                                    BorderBrush="Gray"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Téléphone :"
+                               FontSize="20"
+                               Foreground="White"
+                               Width="200" 
+                               Margin="0,10,0,0"
+                               FontFamily="Monotype Corsiva"/>
+                    <StackPanel Orientation="Vertical"
+                                 Margin="0,10,0,0">
+                        <TextBox x:Name="telFour" FontFamily="Helvetica"
+            		        FontWeight="Light"
+            		        TextWrapping="Wrap"
+            		        FontSize="15"
+            		        HorizontalAlignment="Center"
+            		        Foreground="White"
+            		        BorderThickness="0"
+            		        Width="235"
+            		        HorizontalContentAlignment="Left"
+            		        Height="25"/>
+                        <Border BorderThickness="1"
+                                    Width="235"
+                                    BorderBrush="Gray"/>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Margin="0,30,0,0">
+                    <Button x:Name="enreg_fournisseur"
+                            Content="Enregistrer"
+                            FontSize="16"
+                            Width="250"
+                            Style="{StaticResource styleButton3}" 
+                            Click="enreg_fournisseur_Click"/>
+                </StackPanel>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

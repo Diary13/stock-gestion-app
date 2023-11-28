@@ -1,0 +1,60 @@
+﻿<Window x:Class="StockGestion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:StockGestion"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1024" 
+        WindowStartupLocation="CenterScreen" 
+        ResizeMode="NoResize" 
+        AllowsTransparency="True"
+        Background="Transparent"
+        Loaded="Window_Loaded"
+        WindowStyle="None"
+        MouseDown="Window_MouseDown">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="570"/>
+        </Grid.RowDefinitions>
+        <Border Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#FF152068" Offset="0.394"/>
+                    <GradientStop Color="#FF4D0C39" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+        </Border>
+        <Grid Background="#FF040B3C">
+            <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="Right" 
+                    Width="55" >
+                <Button x:Name="quit"  Width="55" 
+                                   Height="Auto"
+                                   Background="{x:Null}" 
+                                   BorderBrush="{x:Null}" 
+                                   Click="quit_Click"
+                                   Padding="0">
+                    <materialDesign:PackIcon x:Name="icon" 
+        		                         Kind="Power"
+                                         Width="25"
+                                         Height="25"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" 
+                    HorizontalAlignment="center" 
+                    Width="100" >
+                <TextBlock Text="Stock Gestion App"
+                       Foreground="WhiteSmoke"
+                       VerticalAlignment="Center"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Frame x:Name="Info" NavigationUIVisibility="Hidden"/>
+        </Grid>
+
+        <!--<Border Grid.Column="1" Background="#FFC9CFC6" Grid.RowSpan="2"/>-->
+    </Grid>
+</Window>

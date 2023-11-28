@@ -1,0 +1,219 @@
+﻿<Page x:Class="StockGestion.Views.AccueilAdmin"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:StockGestion.Views"
+      mc:Ignorable="d" 
+      d:DesignHeight="570" d:DesignWidth="751"
+      Title="AccueilAdmin">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="253*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="251*"/>
+                <ColumnDefinition Width="251*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="169*"/>
+                <RowDefinition Height="169*"/>
+                <RowDefinition Height="168*"/>
+            </Grid.RowDefinitions>
+
+            <Grid Margin="10">
+                <Border BorderThickness="2"
+                        BorderBrush="#FF62669B" 
+                        CornerRadius="5"/>
+                <StackPanel Margin="0,0,0,111" 
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center">
+                    <StackPanel Width="20"
+                                Height="10"
+                                Background="#FF65669F"
+                                Margin="20,0,0,0" >
+                    </StackPanel>
+                    <TextBlock Text="Revenus"
+                              Foreground="WhiteSmoke"
+                              FontSize="25"
+                              Margin="10,0,0,0" 
+                              FontStyle="Italic" 
+                              FontWeight="Light"
+                              FontFamily="Monotype Corsiva"/>
+                    <TextBlock Text="Décembre 2020"
+                              Foreground="Gray"
+                              FontSize="15"
+                              FontFamily="Monotype Corsiva"
+                              VerticalAlignment="Center"
+                              Margin="100,0,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="0,48,0,61" Orientation="Horizontal"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="153 600 Ar"
+                              Foreground="Gray"
+                              FontSize="25"
+                              Margin="10,0,0,0" 
+                             FontFamily="Monotype Corsiva"/>
+                </StackPanel>
+                <StackPanel Margin="0,93,0,0" VerticalAlignment="Center">
+                    <Button x:Name="infoRevenus" Content="Plus de Statistique"
+                                                 BorderBrush="{x:Null}"
+                                                 Width="300"
+                                                 Style="{StaticResource styleButton1}" Margin="28,0" Height="34"/>
+
+
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10" Grid.Column="1">
+                <Border BorderThickness="2"
+                        BorderBrush="#FF62669B" 
+                        CornerRadius="5"/>
+                <StackPanel Orientation="Horizontal"
+                            Height="33" 
+                            Width="345" 
+                            Margin="5,0,5,116">
+                    <TextBlock Text="Aujourd'hui"
+                               Foreground="#FF62669B"
+                               FontSize="25"
+                               FontFamily="Monotype Corsiva"
+                               Margin="110,0,0,0"/>
+                    <TextBlock Text="Décembre 2020"
+                               Foreground="WhiteSmoke"
+                               FontSize="15"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,12,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="0,38,0,0" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Nombres de ventes:"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="20,0,0,0"/>
+                        <TextBlock Text="30"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,0,0,0"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Somme:"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="20,0,0,0"/>
+                        <TextBlock Text="15000 Ar"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,0,0,0"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Produits commander:"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="20,0,0,0"/>
+                        <TextBlock Text="4"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,0,0,0"/>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+
+            <Grid Margin="10,10" Grid.Row="1">
+                <Border BorderThickness="2"
+                        BorderBrush="#FF62669B" 
+                        CornerRadius="5"/>
+                <StackPanel Margin="0,0,0,111" 
+                            Orientation="Horizontal"
+                            VerticalAlignment="Center">
+                    <StackPanel Width="20"
+                                Height="10"
+                                Background="#FF669F"
+                                Margin="20,0,0,0" >
+                    </StackPanel>
+                    <TextBlock Text="Depenses"
+                              Foreground="WhiteSmoke"
+                              FontSize="25"
+                              Margin="10,0,0,0" 
+                              FontStyle="Italic" 
+                              FontFamily="Monotype Corsiva"
+                              FontWeight="Light"/>
+                    <TextBlock Text="Décembre 2020"
+                              Foreground="Gray"
+                              FontSize="15"
+                              FontFamily="Monotype Corsiva"
+                              VerticalAlignment="Center"
+                              Margin="100,0,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="0,48,0,61" Orientation="Horizontal"
+                            VerticalAlignment="Center">
+                    <TextBlock Text="153 600 Ar"
+                              Foreground="Gray"
+                              FontSize="25"
+                              Margin="10,0,0,0" 
+                              FontFamily="Monotype Corsiva"/>
+                </StackPanel>
+                <StackPanel Margin="0,93,0,0" VerticalAlignment="Center">
+                    <Button x:Name="infoDepense" Content="Plus de Statistique"
+                                                 BorderBrush="{x:Null}"
+                                                 Width="300"
+                                                 Style="{StaticResource styleButton1}" Margin="28,0" Height="34"/>
+
+
+                </StackPanel>
+            </Grid>
+            <Grid Margin="10,10" Grid.Row="1" Grid.Column="1">
+                <Border BorderThickness="2"
+                        BorderBrush="#FF62669B" 
+                        CornerRadius="5"/>
+                <StackPanel Orientation="Horizontal"
+                            Height="33" 
+                            Width="345" 
+                            Margin="5,0,5,116">
+                    <TextBlock Text="Factures"
+                               Foreground="#FF62669B"
+                               FontSize="25"
+                               FontFamily="Monotype Corsiva"
+                               Margin="110,0,0,0"/>
+                    <TextBlock Text="Décembre 2020"
+                               Foreground="WhiteSmoke"
+                               FontSize="15"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,12,0,0"/>
+                </StackPanel>
+                <StackPanel Margin="0,38,0,0" Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Center">
+                        <TextBlock Text="Nombres de factures:"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,10,0,0"/>
+                        <TextBlock Text="30"
+                               Foreground="Gray"
+                               FontSize="20"
+                               FontFamily="Monotype Corsiva"
+                               Margin="10,10,0,0"/>
+                    </StackPanel>
+                    <StackPanel Margin="0,35,0,0" 
+                                VerticalAlignment="Center" 
+                                Height="44" RenderTransformOrigin="0.5,0.5">
+                        <Button x:Name="infoFacture" Content="Plus"
+                                                 BorderBrush="{x:Null}"
+                                                 Width="300"
+                                                 Style="{StaticResource styleButton1}" Margin="28,0" Height="34"/>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
